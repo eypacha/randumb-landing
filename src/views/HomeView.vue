@@ -26,19 +26,26 @@
         <h3 class="text-xl font-bold mb-2 text-purple-700">¿Qué puedes hacer?</h3>
         <ul class="list-disc list-inside text-gray-700 space-y-1">
           <li>Genera insultos piratas para tus juegos o bots</li>
-          <li>Obtén excusas aleatorias para apps educativas o de humor</li>
-          <li>Integra frases divertidas en cualquier proyecto con una simple llamada HTTP</li>
+          <li>Obtén excusas para llegar tarde</li>
+          <li>Obtén conspiraciones aleatorias para evangelizar a los demás</li>
         </ul>
       </section>
       <section>
         <h3 class="text-xl font-bold mb-2 text-purple-700">Ejemplo de uso</h3>
-        <div class="bg-gray-900 text-green-200 rounded-lg p-4 text-sm font-mono overflow-x-auto">
-          <span class="text-gray-400">GET</span> <a href="https://dev.eypacha.com/randumb/api/pirates/random"
-            target="_blank" class="underline hover:text-blue-300">https://dev.eypacha.com/randumb/api/pirates/random</a>
-          <br />
-          <span class="text-gray-400">GET</span> <a href="https://dev.eypacha.com/randumb/api/excuses/es?page=1&limit=5"
-            target="_blank"
-            class="underline hover:text-blue-300">https://dev.eypacha.com/randumb/api/excuses/es?page=1&limit=5</a>
+        <div class="bg-gray-900 text-green-200 rounded-lg p-4 text-sm font-mono overflow-x-auto space-y-1">
+          <div>
+            <span class="text-gray-400">GET</span> <a href="https://dev.eypacha.com/randumb/api/pirates/random"
+              target="_blank" class="underline hover:text-blue-300">https://dev.eypacha.com/randumb/api/pirates/random</a>
+          </div>
+          <div>
+            <span class="text-gray-400">GET</span> <a href="https://dev.eypacha.com/randumb/api/excuses/es?page=1&limit=5"
+              target="_blank"
+              class="underline hover:text-blue-300">https://dev.eypacha.com/randumb/api/excuses/es?page=1&limit=5</a>
+          </div>
+          <div>
+            <span class="text-gray-400">GET</span> <a href="https://dev.eypacha.com/randumb/api/conspiracies/random"
+              target="_blank" class="underline hover:text-blue-300">https://dev.eypacha.com/randumb/api/conspiracies/random</a>
+          </div>
         </div>
         <p class="text-xs text-gray-500 mt-2">Recibe respuestas en JSON listas para usar.</p>
       </section>
