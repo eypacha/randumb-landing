@@ -93,7 +93,6 @@ async function fetchExample() {
 
   try {
     const res = await fetch('https://dev.eypacha.com/randumb/api/pirates/random?lang=' + i18n.global.locale.value);
-    console.log("🚀 ~ fetchExample ~ res:", res)
     const data = await res.json();
     example.value = data.text ? data.text : ERROR_MESSAGE;
   } catch (e) {
