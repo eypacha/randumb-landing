@@ -3,10 +3,26 @@
     <header
       class="text-center w-full py-10 px-6 md:px-16 bg-gradient-to-r from-purple-700 to-blue-500 text-white relative">
       <div class="absolute left-4 top-4 z-50">
-        <select v-model="$i18n.locale" class="rounded px-2 py-1 text-sm text-white">
-          <option value="es">ES</option>
-          <option value="en">EN</option>
-        </select>
+        <div class="relative" >
+          <button @click="showLangs=!showLangs" class="flex items-center gap-1 px-2 py-1 rounded bg-white/90 text-blue-800 font-semibold shadow border border-blue-100 hover:bg-blue-50 focus:outline-none">
+            <span class="uppercase">{{ $i18n.locale }}</span>
+            <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div v-if="showLangs" class="absolute left-0 mt-1 w-full rounded shadow border border-blue-100 overflow-hidden">
+            <div
+              @click="$i18n.locale='es'; showLangs=false"
+              class="flex items-center gap-2 px-3 py-1 cursor-pointer hover:bg-blue-500">
+              ES
+            </div>
+            <div
+              @click="$i18n.locale='en';showLangs=false"
+              class="flex items-center gap-2 px-3 py-1 cursor-pointer hover:bg-blue-500">
+              EN
+            </div>
+          </div>
+        </div>
       </div>
       <a href="https://github.com/eypacha/randumb" target="_blank">
         <img src="/forkme_right_white.png" alt="Fork me on Github" class="absolute top-0 right-0 w-50">
@@ -68,15 +84,20 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-
+import i18n from '@/i18n';
+const showLangs = ref(false);
 const example = ref('');
+
+const ERROR_MESSAGE = 'Ooops... algo salió mal, volvé al rato.';
 async function fetchExample() {
+
   try {
-    const res = await fetch('https://dev.eypacha.com/randumb/api/pirates/random');
+    const res = await fetch('https://dev.eypacha.com/randumb/api/pirates/random?lang=' + i18n.global.locale.value);
+    console.log("🚀 ~ fetchExample ~ res:", res)
     const data = await res.json();
-    example.value = data.text;
+    example.value = data.text ? data.text : ERROR_MESSAGE;
   } catch (e) {
-    example.value = 'Ooops... algo salió mal, volvé al rato.';
+    example.value = ERROR_MESSAGE;
   }
 }
 onMounted(fetchExample);
