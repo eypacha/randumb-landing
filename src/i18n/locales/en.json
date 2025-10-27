@@ -1,24 +1,17 @@
 {
-  "app": {
-    "title": "Example Application",
-    "description": "This is a sample application to demonstrate internationalization.",
-    "welcome": "Welcome to our application"
-  },
-  "footer": {
-    "rights": "All rights reserved."
-  },
-  "sections": {
-    "section1": {
-      "title": "Section 1",
-      "description": "This is the description for Section 1."
-    },
-    "section2": {
-      "title": "Section 2",
-      "description": "This is the description for Section 2."
-    },
-    "section3": {
-      "title": "Section 3",
-      "description": "This is the description for Section 3."
-    }
+  "home": {
+    "title": "Randumb API",
+    "subtitle": "Idiocy as a service",
+    "description": "A collection of APIs to generate random content.",
+    "exampleTooltip": "Click to see another example",
+    "docs": "View documentation",
+    "whatCanYouDo": "What can you do?",
+    "featurePirates": "Generate insults for your pirate games",
+    "featureExcuses": "Get excuses for being late",
+    "featureConspiracies": "Get conspiracies to evangelize others",
+    "featureSoon": "Coming soon: more categories and endpoints",
+    "usageExample": "Usage example",
+    "jsonReady": "Get ready-to-use JSON responses.",
+    "cta": "Start using Randumb API before the ideas run out!"
   }
 }

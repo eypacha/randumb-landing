@@ -1,24 +1,17 @@
 {
-  "app": {
-    "title": "Aplicación de Ejemplo",
-    "description": "Esta es una aplicación de ejemplo para demostrar la internacionalización.",
-    "welcome": "Bienvenido a nuestra aplicación"
-  },
-  "footer": {
-    "rights": "Todos los derechos reservados."
-  },
-  "sections": {
-    "section1": {
-      "title": "Sección 1",
-      "description": "Esta es la descripción de la Sección 1."
-    },
-    "section2": {
-      "title": "Sección 2",
-      "description": "Esta es la descripción de la Sección 2."
-    },
-    "section3": {
-      "title": "Sección 3",
-      "description": "Esta es la descripción de la Sección 3."
-    }
+  "home": {
+    "title": "Randumb API",
+    "subtitle": "Idiotés as a service",
+    "description": "Colección de APIs para generar contenido aleatorio.",
+    "exampleTooltip": "Clic para ver otro ejemplo",
+    "docs": "Ver documentación",
+    "whatCanYouDo": "¿Qué puedes hacer?",
+    "featurePirates": "Genera insultos para tus juegos de piratas",
+    "featureExcuses": "Obtén excusas para llegar tarde",
+    "featureConspiracies": "Obtén conspiraciones para evangelizar a los demás",
+    "featureSoon": "Próximamente: más categorías y endpoints",
+    "usageExample": "Ejemplo de uso",
+    "jsonReady": "Recibe respuestas en JSON listas para usar.",
+    "cta": "¡Empieza a usar Randumb API antes de que se acaben las ideas!"
   }
 }
